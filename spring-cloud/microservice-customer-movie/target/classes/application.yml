@@ -1,0 +1,16 @@
+server:
+  port: 7901
+spring:
+  application:
+    name: microservice-customer-movie
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:8761/eureka
+    healthcheck:
+      enabled:true
+  instance:
+    #默认为false，使用hostname
+    prefer-ip-address: true
+user:
+  userServicePath: http://localhost7905/simple/

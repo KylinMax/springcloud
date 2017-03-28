@@ -1,0 +1,19 @@
+server:
+  port: 8761
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    #下面两个是不让现在这个eureka成为eureka client，而是eureka server，因为现在是单机
+    register-with-eureka: false
+    fetch-registry: false
+    
+    service-url:
+    #把eureka注册到那个url,user和password对应下面name和password的值
+      defaultZone: http://user:password@localhost:8761/eureka
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password
