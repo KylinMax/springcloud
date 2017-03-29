@@ -10,8 +10,11 @@
 
 	<modules>
 		<module>microservice-customer-movie</module>
+		<module>microservice-customer-movie-ribbon</module>
 		<module>microservice-provider-user</module>
 		<module>microservice-discovery-eureka</module>
+		<module>microservice-customer-movie-ribbon-properties-customizing</module>
+		<module>microservice-customer-movie-feign</module>
 	</modules>
 	
 

@@ -12,5 +12,3 @@ eureka:
   instance:
     #默认为false，使用hostname
     prefer-ip-address: true
-user:
-  userServicePath: http://localhost7905/simple/

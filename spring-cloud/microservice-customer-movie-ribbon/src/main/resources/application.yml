@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-customer-movie-ribbon
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:8761/eureka
+    healthcheck:
+      enabled:true
+  instance:
+    #默认为false，使用hostname
+    prefer-ip-address: true
+user:
+  userServicePath: http://localhost:7905/simple/
