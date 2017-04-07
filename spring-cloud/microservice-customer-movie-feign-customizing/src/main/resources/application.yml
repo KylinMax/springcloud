@@ -1,0 +1,23 @@
+server:
+  port: 7901
+spring:
+  application:
+    name: microservice-customer-movie-feign-customizing
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:8761/eureka
+    healthcheck:
+      enabled:true
+  instance:
+    #默认为false，使用hostname
+    prefer-ip-address: true
+logging:
+  level:
+    com.kylin.cloud.feign.FeignClient2: DEBUG
+    
+#解决第一次访问超时问题
+#设置超时时间为5000毫秒
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+#不使用超时机制
+#hystrix.command.default.execution.timeout.enabled: false

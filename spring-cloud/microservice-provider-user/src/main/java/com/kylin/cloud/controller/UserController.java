@@ -47,4 +47,9 @@ public class UserController {
 	public User postUser(@RequestBody User user){
 		return user;
 	}
+	
+	@GetMapping("/get-user")
+	public User gettUser( User user){
+		return user;
+	}
 }

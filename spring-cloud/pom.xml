@@ -15,6 +15,7 @@
 		<module>microservice-discovery-eureka</module>
 		<module>microservice-customer-movie-ribbon-properties-customizing</module>
 		<module>microservice-customer-movie-feign</module>
+		<module>microservice-customer-movie-feign-customizing</module>
 	</modules>
 	
 
