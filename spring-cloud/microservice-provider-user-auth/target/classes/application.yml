@@ -1,0 +1,36 @@
+server:
+  port: 7900
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  application:
+    #指定app的名称
+    name: microservice-provider-user  #建议使用小写
+logging:
+  level:
+    root: info
+    org.hibernate.Hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE8
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.kylin: debug
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:8761/eureka
+  instance:
+    #默认为false，使用hostname
+    prefer-ip-address: true
+    #配置自定义的元数据，可以metadata-map属性后面随意配置
+    metadata-map:
+      author: kylinxiang
+info:
+  app:
+    name: microservice-provider-user-auth
+    encoding: UTF-8

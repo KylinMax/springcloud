@@ -27,3 +27,10 @@ eureka:
   instance:
     #默认为false，使用hostname
     prefer-ip-address: true
+    #配置自定义的元数据，可以metadata-map属性后面随意配置
+    metadata-map:
+      author: kylinxiang
+info:
+  app:
+    name: microservice-provider-user
+    encoding: UTF-8

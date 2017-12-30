@@ -41,13 +41,6 @@ public class MovieContrller {
 		System.out.print(serviceInstance.getPort());
 		System.out.println(serviceInstance.getServiceId());
 		System.out.println("=========================");
-		
-		ServiceInstance serviceInstance2 = this.loadBalancerClient.choose("microservice-provider-user2");
-		System.out.println("*************************");
-		System.out.print(serviceInstance2.getHost());
-		System.out.print(serviceInstance2.getPort());
-		System.out.print(serviceInstance2.getServiceId());
-		System.out.println("*************************");
 		return "ok";
 	}
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-customer-movie" />
+        <module name="microservice-customer-movie-feign" />
+        <module name="microservice-customer-movie-feign-customizing" />
+        <module name="microservice-customer-movie-feign-customizing-auth" />
+        <module name="microservice-customer-movie-ribbon" />
+        <module name="microservice-customer-movie-ribbon-properties-customizing" />
+        <module name="microservice-discovery-eureka" />
+        <module name="microservice-provider-user" />
+        <module name="microservice-provider-user-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-customer-movie" target="1.8" />
+      <module name="microservice-customer-movie-feign" target="1.8" />
+      <module name="microservice-customer-movie-feign-customizing" target="1.8" />
+      <module name="microservice-customer-movie-feign-customizing-auth" target="1.8" />
+      <module name="microservice-customer-movie-ribbon" target="1.8" />
+      <module name="microservice-customer-movie-ribbon-properties-customizing" target="1.8" />
+      <module name="microservice-discovery-eureka" target="1.8" />
+      <module name="microservice-provider-user" target="1.8" />
+      <module name="microservice-provider-user-auth" target="1.8" />
+      <module name="microservice-spring-cloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
